@@ -4,14 +4,43 @@
 
 .amount-box {
   background: #0f8b8d;
+  color: #ec9a29;
+  font-family: "Tourney";
+  font-size: 10rem;
   border-radius: 8px;
-  padding: 24px;
+
+  line-height: 1;
+  height: 0.5em;
+
+  overflow: hidden;
+
+  padding-left: 0.1em;
+  padding-right: 0.1em;
+
+  border-radius: 0.1em;
 }
 
-h2 {
-  color: #ec9a29;
-  font-size: 125px;
-  font-family: "Tourney";
+.top {
+  padding-top: 0.25em;
+
+  --mask: radial-gradient(12px at 12px 100%, #0000 98%, #000) -12px;
+  -webkit-mask: var(--mask);
+  mask: var(--mask);
+
+  border-bottom: 1px solid #0c7274;
+}
+
+.bottom {
+  padding-bottom: 0.25em;
+
+  --mask: radial-gradient(12px at 12px 0, #0000 98%, #000) -12px;
+  -webkit-mask: var(--mask);
+  mask: var(--mask);
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  background: #10989a;
 }
 
 h3 {

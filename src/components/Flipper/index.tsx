@@ -10,9 +10,8 @@ type FlipperProps = {
 export const Flipper = ({ amount, subtitle }: FlipperProps) => {
   return (
     <div className="flipper-block">
-      <div className="amount-box">
-        <h2>{amount}</h2>
-      </div>
+      <div className="amount-box top">{amount}</div>
+      <div className="amount-box bottom">{amount}</div>
       <h3>{subtitle}</h3>
     </div>
   );
