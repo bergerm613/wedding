@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+  text-align: center;
+  background: #143642;
+}
+
+.countdown-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 25px 75px;
+  height: 100vh;
+}
+
+.title {
+  color: white;
+}
+
+.flippers-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 28px;
+}
+
+@media (max-width: 850px) {
+  .flippers-container {
+    flex-direction: column;
+  }
+}
