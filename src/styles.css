@@ -9,11 +9,12 @@ body {
   flex-direction: column;
   justify-content: center;
   padding: 25px 75px;
-  height: 100vh;
 }
 
 .title {
   color: white;
+  font-family: "Poiret One";
+  padding: 42px;
 }
 
 .flippers-container {

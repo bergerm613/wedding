@@ -30,7 +30,7 @@ const App = () => {
 
   return (
     <div className="countdown-container">
-      <h1 className="title">PURIM IS A'COMIN</h1>
+      <h1 className="title">Purim 2023 Let's Goooo</h1>
 
       <div className="flippers-container">
         <Flipper amount={days} subtitle={"days"} />
