@@ -1,44 +1,29 @@
 import * as React from "react";
-import { useState, useEffect } from "react";
 import { Flipper } from "./components/Flipper";
-import { getRemainingTime, purimDate } from "./util";
+import { isCountdownDone, purimDate } from "./util";
+import Confetti from "react-confetti";
+import { useCountdown } from "./hooks/useCountdown";
 
 import "./styles.css";
 
 const App = () => {
-  const [days, setDays] = useState(0);
-  const [hours, setHours] = useState(0);
-  const [minutes, setMinutes] = useState(0);
-  const [seconds, setSeconds] = useState(0);
-
-  const updateTime = () => {
-    const remainingTime = getRemainingTime(purimDate);
-
-    setDays(remainingTime.days);
-    setHours(remainingTime.hours);
-    setMinutes(remainingTime.minutes);
-    setSeconds(remainingTime.seconds);
-  };
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      updateTime();
-    }, 1000);
-
-    return () => clearInterval(interval);
-  }, []);
+  const { days, hours, minutes, seconds } = useCountdown(purimDate);
 
   return (
-    <div className="countdown-container">
-      <h1 className="title">Purim 2023 Let's Goooo</h1>
+    <>
+      {isCountdownDone(days, hours, minutes, seconds) && <Confetti />}
 
-      <div className="flippers-container">
-        <Flipper amount={days} subtitle={"days"} />
-        <Flipper amount={hours} subtitle={"hours"} />
-        <Flipper amount={minutes} subtitle={"minutes"} />
-        <Flipper amount={seconds} subtitle={"seconds"} />
+      <div className="countdown-container">
+        <h1 className="title">Purim 2023 Let's Goooo</h1>
+
+        <div className="flippers-container">
+          <Flipper amount={days} subtitle={"days"} />
+          <Flipper amount={hours} subtitle={"hours"} />
+          <Flipper amount={minutes} subtitle={"minutes"} />
+          <Flipper amount={seconds} subtitle={"seconds"} />
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 

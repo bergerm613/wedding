@@ -1,7 +1,11 @@
 body {
   margin: 0;
   text-align: center;
+  background: #3d8c95;
   background-image: url("./assets/background.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: right;
 }
 
 .countdown-container {
