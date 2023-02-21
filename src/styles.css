@@ -31,5 +31,6 @@ body {
 @media (max-width: 850px) {
   .flippers-container {
     flex-direction: column;
+    gap: 0;
   }
 }

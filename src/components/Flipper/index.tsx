@@ -24,9 +24,9 @@ export const Flipper = ({ amount, subtitle }: FlipperProps) => {
           rotateX: 180,
           y: -240,
           background: "#562c2c",
-          opacity: [100, 100, 100, 0],
+          opacity: [100, 100, 0],
         }}
-        transition={{ duration: 0.1, default: { ease: "linear" } }}
+        transition={{ duration: 0.05, default: { ease: "easeIn" } }}
       >
         {amount}
       </motion.div>
