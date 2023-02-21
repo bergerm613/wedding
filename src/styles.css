@@ -1,7 +1,7 @@
 body {
   margin: 0;
   text-align: center;
-  background: #143642;
+  background-image: url("./assets/background.jpg");
 }
 
 .countdown-container {
@@ -15,6 +15,7 @@ body {
   color: white;
   font-family: "Poiret One";
   padding: 42px;
+  text-transform: uppercase;
 }
 
 .flippers-container {
