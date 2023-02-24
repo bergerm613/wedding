@@ -4,7 +4,8 @@ Heya! Welcome to my Purim countdown.
 
 ### What is Purim
 
-For those of you who don't know - Purim is a Jewish holiday that comes around every year, around late February or early March. It includes sharing lots of food with family and friends and dressing up in costumes, celebrating an averted disaster in ancient Persia. All in all, a good time.
+For those of you who don't know - Purim is a Jewish holiday that comes around every year, around late February or early March. It includes: sharing lots of food with family and friend, dressing up in costumes, and celebrating an averted disaster in ancient Persia. All in all, a good time.
+
 ([see more about it here](https://en.wikipedia.org/wiki/Purim))
 
 So!
