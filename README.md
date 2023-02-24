@@ -21,3 +21,5 @@ This is a React application, written in Typescript.
 It will count down the seconds until Purim starts. Which, like all Jewish days, begins on sunset of the previous evening. To get the exact time of sunset, I'm using the [Hebcal API](https://www.hebcal.com/home/1663/zmanim-halachic-times-api).
 
 I hope you'll find the code to be thoughtfully written, clearly organized, and well documented.
+
+Happy Purim!
