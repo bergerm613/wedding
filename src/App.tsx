@@ -1,13 +1,25 @@
 import * as React from "react";
+import { useEffect, useState } from "react";
+
 import { Flipper } from "./components/Flipper";
-import { isCountdownDone, purimDate } from "./util";
+import { isCountdownDone } from "./utils";
 import Confetti from "react-confetti";
 import { useCountdown } from "./hooks/useCountdown";
 
 import "./styles.css";
+import { getHebcalSunset } from "./utils/apis";
 
 const App = () => {
-  const { days, hours, minutes, seconds } = useCountdown(purimDate);
+  const [purimStartDate, setPurimStartDate] = useState<Date>();
+  const { days, hours, minutes, seconds } = useCountdown(purimStartDate);
+
+  useEffect(() => {
+    const geoname = "5128581"; //geoname of New York City
+
+    getHebcalSunset(geoname).then((sunset) => {
+      setPurimStartDate(sunset);
+    });
+  }, []);
 
   return (
     <>

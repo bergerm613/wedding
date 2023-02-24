@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import { RemainingTime } from "../types";
-import { getRemainingTime } from "../util";
+import { RemainingTime } from "../utils/types";
+import { getRemainingTime } from "../utils";
 
 /**
  * A hook used to continuously check the remaining time, and update every second.

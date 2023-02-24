@@ -1,8 +1,5 @@
 import { RemainingTime } from "./types";
 
-// Date object for the shkiya start time of Purim 2023
-export const purimDate = new Date("03/06/2023 17:52:41");
-
 /**
  * Remaining time from the present until the endTime given.
  *
