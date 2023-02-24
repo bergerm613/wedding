@@ -7,7 +7,12 @@ import Confetti from "react-confetti";
 import { useCountdown } from "./hooks/useCountdown";
 import { getHebcalSunset } from "./utils/apis";
 
+import * as ReactGA from "react-ga";
+
 import "./styles.css";
+
+const TRACKING_ID = "355164744"; // YOUR_OWN_TRACKING_ID
+ReactGA.initialize(TRACKING_ID);
 
 const App = () => {
   const [purimStartDate, setPurimStartDate] = useState<Date>();
