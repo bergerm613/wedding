@@ -5,9 +5,9 @@ import { Flipper } from "./components/Flipper";
 import { isCountdownDone } from "./utils";
 import Confetti from "react-confetti";
 import { useCountdown } from "./hooks/useCountdown";
+import { getHebcalSunset } from "./utils/apis";
 
 import "./styles.css";
-import { getHebcalSunset } from "./utils/apis";
 
 const App = () => {
   const [purimStartDate, setPurimStartDate] = useState<Date>();
