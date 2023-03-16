@@ -3,7 +3,7 @@
 }
 
 .amount-box {
-  color: #ec9a29;
+  color: #fcd6c2;
   font-family: "Tourney";
   font-size: 10rem;
   border-radius: 8px;
@@ -20,18 +20,18 @@
 }
 
 .top {
-  background: #562c2c;
+  background: #c48d98;
   padding-top: 0.25em;
 
   --mask: radial-gradient(12px at 12px 100%, #0000 98%, #000) -12px;
   -webkit-mask: var(--mask);
   mask: var(--mask);
 
-  border-bottom: 0.75px solid #562c2c;
+  border-bottom: 0.75px solid #ac7c86;
 }
 
 .bottom {
-  background: #633232;
+  background: #b5838d;
   padding-bottom: 0.25em;
 
   --mask: radial-gradient(12px at 12px 0, #0000 98%, #000) -12px;
@@ -44,6 +44,6 @@
 }
 
 h3 {
-  color: #dad2d8;
-  font-family: "Poiret One";
+  color: #6d6875;
+  font-family: "Amatic SC", cursive;
 }
